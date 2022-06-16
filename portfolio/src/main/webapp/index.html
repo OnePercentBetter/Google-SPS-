@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -23,7 +23,7 @@
                     <li class="nav__item"><a href="#services" class="nav__link">Hobbies</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -77,25 +77,38 @@ Hungarian Rhapsody No. 2, I picked up the piano about a year ago! If we're ever 
             <p class="section__subtitle section__subtitle--work">What I've done so far</p>
 
             <div class="portfolio">
-          
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="https://github.com/OnePercentBetter/CodePath-Summer-Pre-Work" class="portfolio__item">
                     <img src="/images/Memory_Game.png" alt="" class="portfolio__img">
                 </a>
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="https://github.com/OnePercentBetter/Hotel-Management" class="portfolio__item">
                     <img src="/images/Hotel_Management.png" alt="" class="portfolio__img">
                 </a>
 
         
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="https://github.com/OnePercentBetter/Flix" class="portfolio__item">
                     <img src="/images/Flix.png" alt="" class="portfolio__img">
                 </a>
 
           
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="https://github.com/OnePercentBetter/PhoneBook" class="portfolio__item">
                     <img src="/images/Phonebook.png" alt="" class="portfolio__img">
                 </a>
             </div>
         </section>
+
+        <section class="about-me" id="contact">
+            <h2 class="section__title section__title--about">Contact Me</h2>
+ 
+            <div class="about-me__body">
+              <form action="/form-handler" method="POST">
+                <h3>Enter your Name, Email Address, and Message</h3>
+                <textarea name="text-input"></textarea>
+                <br/><br/>
+
+                <input type="submit" />
+              </form>
+           </div>
+         </section>
 
 
       
