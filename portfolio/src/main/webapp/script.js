@@ -26,3 +26,41 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link')
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+})
+var example = ['Student', 'Developer', 'Thinker', 'Procrastinator'];
+ var gFirstTime = true;
+textSequence(0);
+function textSequence(i) {
+                if (gFirstTime) {
+                  timeToWait = 0;
+                  gFirstTime = false;
+                }
+                else {
+                  timeToWait = 1250;
+                }
+                if (example.length > i) {
+                  setTimeout(function () {
+                    var sequenceDiv = document.getElementById("sequence");
+                    sequenceDiv.innerHTML = example[i];
+                    textSequence(++i);
+                  }, timeToWait); // 3 seconds (in milliseconds)
+
+                } else if (example.length == i) { // Loop
+                  textSequence(0);
+                }
+
+              }
+
